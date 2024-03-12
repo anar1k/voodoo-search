@@ -1,4 +1,4 @@
 interface IOption {
-    value: string | number,
+    value: number,
     label: string
 }

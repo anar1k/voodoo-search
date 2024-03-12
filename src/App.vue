@@ -15,7 +15,7 @@ Promise.all([
   fetchUsers()
 ]);
 
-const filterValue = ref<number>();
+const filterValue = ref<number>(0);
 
 const getOptionsForSelect = computed<IOption[]>(() => {
   return users.value.map((item) => {

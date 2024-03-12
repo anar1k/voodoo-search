@@ -5,7 +5,7 @@ interface IProps {
 
 defineProps<IProps>();
 
-const modelValue = defineModel<string | number>();
+const modelValue = defineModel<number>();
 </script>
 
 <template>
@@ -13,13 +13,6 @@ const modelValue = defineModel<string | number>();
     v-model="modelValue"
     class="border rounded-lg focus:ring-blue-500 focus:border-blue-500 block py-2 px-4"
   >
-    <option
-      disabled
-      value=""
-    >
-      Filter by author
-    </option>
-
     <option :value="0">
       All
     </option>
